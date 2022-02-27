@@ -1,7 +1,8 @@
-
+import Container from '../../Components/common/Container'
 
 export default function Contact() {
 	return (
+		<Container>
 		<div className="my-20">
 			<form className="mx-auto w-full max-w-lg">
 				<div className="flex flex-wrap -mx-3 mb-6">
@@ -18,7 +19,7 @@ export default function Contact() {
 							type="text"
 							placeholder="Jane"
 						/>
-						
+
 					</div>
 					<div className="w-full md:w-1/2 px-3">
 						<label
@@ -48,7 +49,7 @@ export default function Contact() {
 							id="email"
 							type="email"
 						/>
-						
+
 					</div>
 				</div>
 				<div className="flex flex-wrap -mx-3 mb-6">
@@ -64,7 +65,7 @@ export default function Contact() {
 							id="message"
 							defaultValue={""}
 						/>
-						
+
 					</div>
 				</div>
 				<div className="flex items-center justify-center ">
@@ -79,5 +80,6 @@ export default function Contact() {
 				</div>
 			</form>
 		</div>
-	);
+		</Container>
+	)
 }
